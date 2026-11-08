@@ -1,6 +1,6 @@
 # HL Parfums — Painel administrativo
 
-Painel de gestão do catálogo da HL Parfums (loja: repositório `hl-parfums`). Os dois apps são independentes e usam o mesmo banco no Supabase.
+Painel de gestão do catálogo da HL Parfums (loja: repositório `hlparfums-loja`). Os dois apps são independentes e usam o mesmo banco no Supabase.
 
 ## Funções
 - Login pelo número (sem +55) e senha — internamente `NUMERO@hlparfums.app` no Supabase Auth
@@ -9,7 +9,7 @@ Painel de gestão do catálogo da HL Parfums (loja: repositório `hl-parfums`). 
 - Editar oferta, Lixeira (restaurar / apagar de vez; limpeza automática após 30 dias), trocar senha
 
 ## Publicar na Vercel
-Add New → Project → importar `lucasdiaas79/hl-parfums-admin` → Next.js → Deploy. Depois, Settings → Domains para o domínio do painel.
+Add New → Project → importar `lucasdiaas79/hlparfums-painel` → Next.js → Deploy. Depois, Settings → Domains para o domínio do painel.
 
 Variável recomendada: `NEXT_PUBLIC_STORE_URL` = endereço final da loja (botão "Ver loja"). As demais têm padrão (`.env.example`).
 
